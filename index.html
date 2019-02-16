@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Guess the Puppy!</h5>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-md-6">
+                <p>You will give a random number at the start of the game</p>
+                <p>There are four puppy pics below. By clicking on a pic you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                <p>The value of each puppy pic is hidden from you until you click on it</p>
+                <p>Each time when the game starts, the game will change the value of each puppy pic</p>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+            <div id="guessnumbox"></div>
+            </div>
+        </div>
+        <!-- <div id="guessnumbox"></div> -->
+        <div class="row">
+            <div class="span6" style="float: none; margin: 0 auto;">
+                <div id="status"></div>
+                <div id="win">win </div>
+                <div id="lose">lose </div>
+            </div>     
+        </div>
+        <button id="pic1"></button>
+        <button id="pic2"></button>
+        <button id="pic3"></button>
+        <button id="pic4"></button>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Your total Score is:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="totalscore"></div>
+            </div>
+        </div>   
+    </div>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
